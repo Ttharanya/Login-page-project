@@ -1,0 +1,131 @@
+/* Styles for centering the entire page */
+body {
+    margin: 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; /* Vertically center the container */
+    background-image: url('IMG_3384.JPG'); /* Set your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+/* Styles for the login container */
+.login-container {
+    background-color:rgba(68, 66, 89, 0.5); /* Transparent background */
+    padding: 30px;
+    border-radius: 50%; /* Makes the container circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Fixed width of the login container */
+    height: 500px; /* Set a height to match the width for a circle */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center contents vertically */
+    align-items: center; /* Center contents horizontally */
+}
+
+/* Styling for the logo and heading */
+h2 {
+    display: flex;
+    align-items: center; /* Vertically align the logo and text */
+    justify-content: center; /* Center the logo and text */
+    font-size: 32px; /* Large font size for DAFFYTEL */
+    margin-bottom: 30px;
+}
+
+/* Logo styling */
+.logo {
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between the logo and DAFFYTEL text */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+    font-size: 20px; /* Increased font size */
+}
+
+/* Input field styling */
+.input-group input {
+    width: 100%; /* Full width of the parent container */
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Border color with transparency */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px;
+    box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+/* Placeholder styling (optional, to adjust placeholder text appearance) */
+::placeholder {
+    color: #6b5b9c;
+    font-size: 14px;
+}
+
+/* Submit button styling */
+.login-btn {
+    width: 100%; /* Full width of the button */
+    padding: 12px;
+    background-color: rgba(4, 19, 232, 0.8); /* Semi-transparent button background */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Smooth rounded corners for the button */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Button hover effect */
+.login-btn:hover {
+    background-color: rgba(69, 160, 73, 0.8); /* Semi-transparent button hover color */
+}
+
+/* Styling for the password group */
+.password-group {
+    position: relative; /* Positioning context for the eye icon */
+}
+
+/* Eye icon styling */
+.toggle-password {
+    position: absolute;
+    right: 15px; /* Increased spacing from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Center icon vertically */
+    cursor: pointer;
+    font-size: 20px; /* Size of the eye icon */
+}
+
+/* Styles for Remember Me checkbox */
+.remember-me {
+    margin-top: 20px; /* Increased margin-top for space between button and checkbox */
+    margin-bottom: 20px; /* Added margin-bottom for space after checkbox */
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+/* Change the label color for visibility */
+.remember-me label {
+    font-size: 16px; /* Slightly larger font for readability */
+    color: #ffffff; /* Change text color to white for better contrast */
+}
+
+/* Adjusting padding for mobile view (responsive) */
+@media screen and (max-width: 400px) {
+    .login-container {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow height to adjust on smaller screens */
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+}
+
+/* Add this to your existing CSS */
+.heading-image {
+    width: 80%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.1px; /* Space below the heading image */
+}
